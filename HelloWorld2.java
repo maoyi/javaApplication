@@ -8,7 +8,7 @@ public class HelloWorld2 {
   
 	
 	public static void main(String[] args){
-		temperature();
+		pointDistance();
 	}
 	 public static void degreeChange(){
 		System.out.println("enter a degree in Celsisus: ");
@@ -84,8 +84,19 @@ public class HelloWorld2 {
 			 }else{
 		 System.out.println("please enter a numeric value!");
 		 }
+	}
+	 public static void pointDistance(){
+		 System.out.println("enter x1 and y1: ");
+		 Scanner input = new Scanner(System.in);
+		 double x1 = input.nextDouble();
+		 double y1 = input.nextDouble();
+		 System.out.println("enter x2 and y2: ");
+		 double x2 = input.nextDouble();
+		 double y2 = input.nextDouble();
 		 
+		 double distance = Math.sqrt(Math.pow((x2-x1),2)+Math.pow(y2-y1, 2));
+		 System.out.println("The distance between point A to point B is: " + distance);
 	 }
-	
- }
+
+}
 
